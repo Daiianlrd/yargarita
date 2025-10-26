@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Yargarita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <img src="images/yargarita-logo.png" alt="Yargarita - L'art de la mixologie" class="nav__logo">
+            </div>
+            <div class="nav__hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link">Accueil</a></li>
+                <li><a href="ateliers.html" class="nav__link">Ateliers</a></li>
+                <li><a href="service.html" class="nav__link">Service</a></li>
+                <li><a href="menu.html" class="nav__link">Menu</a></li>
+                <li><a href="galerie.html" class="nav__link nav__link--active">Galerie</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__contact">
+                <a href="tel:+41XXXXXXXXX" class="btn btn--primary">📞 Appeler</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero__title">Galerie Yargarita</h1>
+            <p class="page-hero__subtitle">Découvrez nos créations et l'ambiance de nos événements</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn filter-btn--active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="cocktails">Cocktails</button>
+                <button class="filter-btn" data-filter="ateliers">Ateliers</button>
+                <button class="filter-btn" data-filter="evenements">Événements</button>
+                <button class="filter-btn" data-filter="yara">Yara en Action</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery__grid">
+                <!-- Cocktails -->
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo Yargarita Spéciale]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Yargarita Spéciale</h3>
+                        <p class="gallery-item__description">Notre cocktail signature</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo Sunset Mojito]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Sunset Mojito</h3>
+                        <p class="gallery-item__description">Mojito aux fruits rouges</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo Golden Hour]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Golden Hour</h3>
+                        <p class="gallery-item__description">Cocktail doré aux épices</p>
+                    </div>
+                </div>
+
+                <!-- Ateliers -->
+                <div class="gallery-item" data-category="ateliers">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo atelier en action]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Atelier en Action</h3>
+                        <p class="gallery-item__description">Participants en train d'apprendre</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ateliers">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo matériel atelier]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Matériel Professionnel</h3>
+                        <p class="gallery-item__description">Shakers et ingrédients frais</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ateliers">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo dégustation]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Moment de Dégustation</h3>
+                        <p class="gallery-item__description">Partage et convivialité</p>
+                    </div>
+                </div>
+
+                <!-- Événements -->
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo bar mariage]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Bar de Mariage</h3>
+                        <p class="gallery-item__description">Installation élégante pour mariage</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo événement entreprise]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Événement d'Entreprise</h3>
+                        <p class="gallery-item__description">Service professionnel</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo team-building]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Team-Building</h3>
+                        <p class="gallery-item__description">Animation d'équipe</p>
+                    </div>
+                </div>
+
+                <!-- Yara en Action -->
+                <div class="gallery-item" data-category="yara">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo Yara préparant]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Yara en Action</h3>
+                        <p class="gallery-item__description">Techniques de mixologie</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="yara">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo Yara avec clients]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Avec les Clients</h3>
+                        <p class="gallery-item__description">Moment de partage</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="yara">
+                    <div class="gallery-item__image">
+                        <div class="placeholder-image">[Photo portrait Yara]</div>
+                    </div>
+                    <div class="gallery-item__overlay">
+                        <h3 class="gallery-item__title">Portrait de Yara</h3>
+                        <p class="gallery-item__description">Votre experte en mixologie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Vous souhaitez créer vos propres souvenirs ?</h2>
+                <p class="cta__subtitle">Contactez-nous pour organiser votre événement ou atelier</p>
+                <a href="mailto:ygex@hotmail.com?subject=Contact - Yargarita&body=Bonjour Yara,%0D%0A%0D%0AJe souhaite vous contacter concernant vos services de mixologie.%0D%0A%0D%0AMessage :%0D%0A%0D%0AMerci pour votre retour !" class="btn btn--cta">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+            <div class="footer__brand">
+                <img src="images/yargarita-logo.png" alt="Yargarita" class="footer__logo">
+                <p>L'art de la mixologie à votre service</p>
+            </div>
+                <div class="footer__nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="ateliers.html">Ateliers</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contact</h4>
+                    <p>📧 [email à définir]</p>
+                    <p>📱 [numéro à définir]</p>
+                </div>
+                <div class="footer__social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📸 Instagram</a>
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Yargarita - Tous droits réservés</p>
+                <p><a href="mentions-legales.html">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Gallery filters
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('filter-btn--active'));
+                // Add active class to clicked button
+                btn.classList.add('filter-btn--active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
